@@ -37,6 +37,7 @@ namespace OxalateClient_GUI
             this.receiveBox = new System.Windows.Forms.RichTextBox();
             this.inputContainer = new System.Windows.Forms.GroupBox();
             this.inputBox = new System.Windows.Forms.TextBox();
+            this.disconnectLabel = new System.Windows.Forms.Label();
             this.recvContainer.SuspendLayout();
             this.inputContainer.SuspendLayout();
             this.SuspendLayout();
@@ -101,6 +102,15 @@ namespace OxalateClient_GUI
             this.inputBox.Name = "inputBox";
             this.inputBox.TextChanged += new System.EventHandler(this.CheckInputBox);
             // 
+            // disconnectLabel
+            // 
+            this.disconnectLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            resources.ApplyResources(this.disconnectLabel, "disconnectLabel");
+            this.disconnectLabel.Name = "disconnectLabel";
+            this.disconnectLabel.Click += new System.EventHandler(this.Disconnect);
+            this.disconnectLabel.MouseEnter += new System.EventHandler(this.LabelButtonEnter);
+            this.disconnectLabel.MouseLeave += new System.EventHandler(this.LabelButtonLeave);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -111,6 +121,7 @@ namespace OxalateClient_GUI
             this.Controls.Add(this.verLabel);
             this.Controls.Add(this.userLabel);
             this.Controls.Add(this.connectLabel);
+            this.Controls.Add(this.disconnectLabel);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "MainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CloseForm);
@@ -124,14 +135,14 @@ namespace OxalateClient_GUI
         }
 
         #endregion
-
-        private System.Windows.Forms.Label connectLabel;
         private System.Windows.Forms.Label userLabel;
         private System.Windows.Forms.Label verLabel;
         private System.Windows.Forms.GroupBox recvContainer;
         private System.Windows.Forms.GroupBox inputContainer;
         private System.Windows.Forms.TextBox inputBox;
         public System.Windows.Forms.RichTextBox receiveBox;
+        private System.Windows.Forms.Label disconnectLabel;
+        public System.Windows.Forms.Label connectLabel;
     }
 }
 

@@ -66,6 +66,7 @@ namespace OxalateClient_GUI
                 {
                     TextBoxIO.Print(parentForm.receiveBox, response["message"], preference.ColorTheme);
                     parentForm.receiveBox.AppendText("\n");
+                    parentForm.connectLabel.Visible = false;
                     this.Close();
                 }
                 else
@@ -89,6 +90,7 @@ namespace OxalateClient_GUI
                 {
                     TextBoxIO.Print(parentForm.receiveBox, response["message"], preference.ColorTheme);
                     parentForm.receiveBox.AppendText("\n");
+                    parentForm.connectLabel.Visible = false;
                     this.Close();
                 } 
                 else

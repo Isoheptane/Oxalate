@@ -126,11 +126,10 @@ namespace OxalateClient_GUI
             }
         }
 
-        private void CloseForm(object sender, FormClosingEventArgs e)
+        void Disconnect()
         {
             try
             {
-                File.WriteAllText("config.json", preference.ToJsonObject().Serialize("", "  "));
                 if (client.Connected)
                 {
                     client.Send(new CommandCall("disconnect").ToPacket());
@@ -143,6 +142,19 @@ namespace OxalateClient_GUI
                     client.Disconnect();
                 }
             }
+        }
+
+        private void CloseForm(object sender, FormClosingEventArgs e)
+        {
+            Disconnect();
+            File.WriteAllText("config.json", preference.ToJsonObject().Serialize("", "  "));
+        }
+
+        private void Disconnect(object sender, EventArgs e)
+        {
+            Disconnect();
+            connectLabel.Visible = true;
+            TextBoxIO.Print(receiveBox, "\\arDisconnected.\n", preference.ColorTheme);
         }
     }
 }

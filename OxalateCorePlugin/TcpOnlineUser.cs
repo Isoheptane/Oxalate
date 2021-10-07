@@ -62,12 +62,11 @@ namespace OxalateCorePlugin
                 }
                 if (DateTime.Now > expireTime)
                 {
-                    Plugin.API.DisconnectUser(Username);
-                    Disconnect();
                     ScreenIO.Warn(
                         Plugin.Translation["listener.keepalive"]
                         .Replace("$USER", Username)
                     );
+                    Plugin.API.DisconnectUser(Username);
                     break;
                 }
                 if (!stream.DataAvailable)
@@ -79,8 +78,12 @@ namespace OxalateCorePlugin
                     CommandCall call = CommandCall.Parse(ReceivePacket());
                     if (call.CommandName == "disconnect")
                     {
+                        ScreenIO.Info(
+                            Plugin.Translation["listener.disconnected"]
+                            .Replace("$ADDR", client.Client.RemoteEndPoint.ToString())
+                            .Replace("$USER", Username)
+                        );
                         Plugin.API.DisconnectUser(Username);
-                        Disconnect();
                         break;
                     }
                     if (call.CommandName == "keep-alive")

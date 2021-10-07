@@ -7,8 +7,9 @@
   "listener.stop": "[OxalateCore] 服务端已停止监听。",
   "listener.error": "[OxalateCore] 服务端监听线程中出现异常：$MESSAGE",
 
-  "listener.registered": "[OxalateCore] 来自 $ADDR 的用户 $USER 已注册。",
-  "listener.connected": "[OxalateCore] 来自 $ADDR 的用户 $USER 已连接。",
+  "listener.registered": "[OxalateCore] 用户 $USER ($ADDR) 已注册。",
+  "listener.connected": "[OxalateCore] 用户 $USER ($ADDR) 已连接。",
+  "listener.disconnected": "[OxalateCore] 用户 $USER ($ADDR) 已断开连接。",
   "listener.failConnect": "[OxalateCore] 来自 $ADDR 的用户 $USER 连接失败：$MESSAGE",
   "listener.daemonError": "[OxalateCore] 在用户 $USER 的监听线程中出现异常：$MESSAGE",
   "listener.keepalive": "[OxalateCore] 用户 $USER 因无响应而被踢出服务器。",
