@@ -1,0 +1,21 @@
+﻿{
+  "server.loadUserProfile": "已加载 $COUNT 个用户数据。",
+  "server.saveUserProfile": "已保存 $COUNT 个用户数据。",
+  "server.loadPlugins": "成功加载并启动了 $COUNT 个插件。",
+  "server.stop": "服务器已关闭。",
+
+  "server.failLoad": "加载位于 \"$PATH\" 的用户数据时出现异常：$MESSAGE",
+  "server.failSave": "保存 $USER 的用户数据时出现异常：$MESSAGE",
+  "server.failPluginLoad": "加载位于 \"$PATH\" 的插件时出现异常：$MESSAGE",
+  "server.enablePluginError": "启用插件 $NAME 时出现异常：$MESSAGE",
+  "server.reloadPluginError": "重载插件 $NAME 时出现异常：$MESSAGE",
+  "server.disablePluginError": "禁用插件 $NAME 时出现异常：$MESSAGE",
+  "server.listenerError": "处理连接请求时出现异常：$MESSAGE",
+  "server.commandError": "用户 $USER 执行命令 '$COMMAND' 时出现异常：$MESSAGE",
+  "server.sendPacketError": "在向用户 $USER 发送数据包时出现异常：$MESSAGE",
+
+  "server.commandNotFound": "\\cr未知指令 \"$COMMAND\"。",
+  "server.commandUsage": "\\cr指令用法：\n  $USAGE",
+  "server.permissionDenied": "\\cr您没有权限执行命令 \"$COMMAND\"。",
+  "server.broadcastDisplay": "[广播] $MESSAGE"
+}

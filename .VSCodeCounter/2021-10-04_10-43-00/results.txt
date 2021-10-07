@@ -1,0 +1,163 @@
+Date : 2021-10-04 10:43:00
+Directory : e:\Projects\Development\Oxalate
+Total : 92 files,  3866 codes, 265 comments, 307 blanks, all 4438 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| C#         |         34 |      1,932 |        265 |        254 |      2,451 |
+| JSON       |         36 |      1,724 |          0 |         25 |      1,749 |
+| XML        |         14 |        186 |          0 |         20 |        206 |
+| Properties |          8 |         24 |          0 |          8 |         32 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                                    | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                       |         92 |      3,866 |        265 |        307 |      4,438 |
+| JsonSharp                                                                                                                               |         14 |        776 |         23 |         18 |        817 |
+| JsonSharp\bin                                                                                                                           |          2 |         46 |          0 |          0 |         46 |
+| JsonSharp\bin\Debug                                                                                                                     |          1 |         23 |          0 |          0 |         23 |
+| JsonSharp\bin\Debug\netcoreapp3.1                                                                                                       |          1 |         23 |          0 |          0 |         23 |
+| JsonSharp\bin\Release                                                                                                                   |          1 |         23 |          0 |          0 |         23 |
+| JsonSharp\bin\Release\netcoreapp3.1                                                                                                     |          1 |         23 |          0 |          0 |         23 |
+| JsonSharp\obj                                                                                                                           |         10 |        183 |         22 |         14 |        219 |
+| JsonSharp\obj\Debug                                                                                                                     |          3 |         15 |         11 |          7 |         33 |
+| JsonSharp\obj\Debug\netcoreapp3.1                                                                                                       |          3 |         15 |         11 |          7 |         33 |
+| JsonSharp\obj\Release                                                                                                                   |          3 |         15 |         11 |          7 |         33 |
+| JsonSharp\obj\Release\netcoreapp3.1                                                                                                     |          3 |         15 |         11 |          7 |         33 |
+| OxalateCorePlugin                                                                                                                       |         25 |        853 |         22 |         43 |        918 |
+| OxalateCorePlugin\bin                                                                                                                   |         12 |        340 |          0 |         10 |        350 |
+| OxalateCorePlugin\bin\Debug                                                                                                             |          6 |        169 |          0 |          5 |        174 |
+| OxalateCorePlugin\bin\Debug\netcoreapp3.1                                                                                               |          6 |        169 |          0 |          5 |        174 |
+| OxalateCorePlugin\bin\Release                                                                                                           |          6 |        171 |          0 |          5 |        176 |
+| OxalateCorePlugin\bin\Release\netcoreapp3.1                                                                                             |          6 |        171 |          0 |          5 |        176 |
+| OxalateCorePlugin\obj                                                                                                                   |         11 |        452 |         22 |         14 |        488 |
+| OxalateCorePlugin\obj\Debug                                                                                                             |          3 |         15 |         11 |          7 |         33 |
+| OxalateCorePlugin\obj\Debug\netcoreapp3.1                                                                                               |          3 |         15 |         11 |          7 |         33 |
+| OxalateCorePlugin\obj\Release                                                                                                           |          4 |         33 |         11 |          7 |         51 |
+| OxalateCorePlugin\obj\Release\netcoreapp3.1                                                                                             |          3 |         15 |         11 |          7 |         33 |
+| OxalateServer                                                                                                                           |         34 |      1,517 |        139 |        175 |      1,831 |
+| OxalateServer\bin                                                                                                                       |         10 |        214 |          0 |         10 |        224 |
+| OxalateServer\bin\Debug                                                                                                                 |          5 |        107 |          0 |          5 |        112 |
+| OxalateServer\bin\Debug\netcoreapp3.1                                                                                                   |          5 |        107 |          0 |          5 |        112 |
+| OxalateServer\bin\Release                                                                                                               |          5 |        107 |          0 |          5 |        112 |
+| OxalateServer\bin\Release\netcoreapp3.1                                                                                                 |          5 |        107 |          0 |          5 |        112 |
+| OxalateServer\obj                                                                                                                       |         10 |        347 |         22 |         14 |        383 |
+| OxalateServer\obj\Debug                                                                                                                 |          3 |         15 |         11 |          7 |         33 |
+| OxalateServer\obj\Debug\netcoreapp3.1                                                                                                   |          3 |         15 |         11 |          7 |         33 |
+| OxalateServer\obj\Release                                                                                                               |          3 |         15 |         11 |          7 |         33 |
+| OxalateServer\obj\Release\netcoreapp3.1                                                                                                 |          3 |         15 |         11 |          7 |         33 |
+| OxalateStandard                                                                                                                         |         19 |        720 |         81 |         71 |        872 |
+| OxalateStandard\bin                                                                                                                     |          2 |         72 |          0 |          0 |         72 |
+| OxalateStandard\bin\Debug                                                                                                               |          1 |         36 |          0 |          0 |         36 |
+| OxalateStandard\bin\Debug\netcoreapp3.1                                                                                                 |          1 |         36 |          0 |          0 |         36 |
+| OxalateStandard\bin\Release                                                                                                             |          1 |         36 |          0 |          0 |         36 |
+| OxalateStandard\bin\Release\netcoreapp3.1                                                                                               |          1 |         36 |          0 |          0 |         36 |
+| OxalateStandard\obj                                                                                                                     |         11 |        279 |         22 |         14 |        315 |
+| OxalateStandard\obj\Debug                                                                                                               |          4 |         30 |         11 |          7 |         48 |
+| OxalateStandard\obj\Debug\netcoreapp3.1                                                                                                 |          3 |         15 |         11 |          7 |         33 |
+| OxalateStandard\obj\Release                                                                                                             |          3 |         15 |         11 |          7 |         33 |
+| OxalateStandard\obj\Release\netcoreapp3.1                                                                                               |          3 |         15 |         11 |          7 |         33 |
++-----------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                                                | language   | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| e:\Projects\Development\Oxalate\JsonSharp\Json.cs                                                                                       | C#         |        542 |          1 |          1 |        544 |
+| e:\Projects\Development\Oxalate\JsonSharp\JsonSharp.csproj                                                                              | XML        |          5 |          0 |          3 |          8 |
+| e:\Projects\Development\Oxalate\JsonSharp\bin\Debug\netcoreapp3.1\JsonSharp.deps.json                                                   | JSON       |         23 |          0 |          0 |         23 |
+| e:\Projects\Development\Oxalate\JsonSharp\bin\Release\netcoreapp3.1\JsonSharp.deps.json                                                 | JSON       |         23 |          0 |          0 |         23 |
+| e:\Projects\Development\Oxalate\JsonSharp\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs                        | C#         |          3 |          1 |          1 |          5 |
+| e:\Projects\Development\Oxalate\JsonSharp\obj\Debug\netcoreapp3.1\JsonSharp.AssemblyInfo.cs                                             | C#         |          9 |         10 |          5 |         24 |
+| e:\Projects\Development\Oxalate\JsonSharp\obj\Debug\netcoreapp3.1\JsonSharp.GeneratedMSBuildEditorConfig.editorconfig                   | Properties |          3 |          0 |          1 |          4 |
+| e:\Projects\Development\Oxalate\JsonSharp\obj\JsonSharp.csproj.nuget.dgspec.json                                                        | JSON       |         62 |          0 |          0 |         62 |
+| e:\Projects\Development\Oxalate\JsonSharp\obj\JsonSharp.csproj.nuget.g.props                                                            | XML        |         18 |          0 |          0 |         18 |
+| e:\Projects\Development\Oxalate\JsonSharp\obj\JsonSharp.csproj.nuget.g.targets                                                          | XML        |          6 |          0 |          0 |          6 |
+| e:\Projects\Development\Oxalate\JsonSharp\obj\Release\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs                      | C#         |          3 |          1 |          1 |          5 |
+| e:\Projects\Development\Oxalate\JsonSharp\obj\Release\netcoreapp3.1\JsonSharp.AssemblyInfo.cs                                           | C#         |          9 |         10 |          5 |         24 |
+| e:\Projects\Development\Oxalate\JsonSharp\obj\Release\netcoreapp3.1\JsonSharp.GeneratedMSBuildEditorConfig.editorconfig                 | Properties |          3 |          0 |          1 |          4 |
+| e:\Projects\Development\Oxalate\JsonSharp\obj\project.assets.json                                                                       | JSON       |         67 |          0 |          0 |         67 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\OxalateCore.cs                                                                        | C#         |         36 |          0 |         11 |         47 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\OxalateCorePlugin.csproj                                                              | XML        |         25 |          0 |          8 |         33 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\bin\Debug\netcoreapp3.1\OxalateCorePlugin.deps.json                                   | JSON       |         63 |          0 |          0 |         63 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\bin\Debug\netcoreapp3.1\OxalateServer.deps.json                                       | JSON       |         49 |          0 |          0 |         49 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\bin\Debug\netcoreapp3.1\OxalateServer.runtimeconfig.dev.json                          | JSON       |          8 |          0 |          0 |          8 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\bin\Debug\netcoreapp3.1\OxalateServer.runtimeconfig.json                              | JSON       |          9 |          0 |          0 |          9 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\bin\Debug\netcoreapp3.1\config.json                                                   | JSON       |         12 |          0 |          0 |         12 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\bin\Debug\netcoreapp3.1\zh-cn.lang.json                                               | JSON       |         28 |          0 |          5 |         33 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\bin\Release\netcoreapp3.1\OxalateCorePlugin.deps.json                                 | JSON       |         64 |          0 |          0 |         64 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\bin\Release\netcoreapp3.1\OxalateServer.deps.json                                     | JSON       |         50 |          0 |          0 |         50 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\bin\Release\netcoreapp3.1\OxalateServer.runtimeconfig.dev.json                        | JSON       |          8 |          0 |          0 |          8 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\bin\Release\netcoreapp3.1\OxalateServer.runtimeconfig.json                            | JSON       |          9 |          0 |          0 |          9 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\bin\Release\netcoreapp3.1\config.json                                                 | JSON       |         12 |          0 |          0 |         12 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\bin\Release\netcoreapp3.1\zh-cn.lang.json                                             | JSON       |         28 |          0 |          5 |         33 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs                | C#         |          3 |          1 |          1 |          5 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\obj\Debug\netcoreapp3.1\OxalateCorePlugin.AssemblyInfo.cs                             | C#         |          9 |         10 |          5 |         24 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\obj\Debug\netcoreapp3.1\OxalateCorePlugin.GeneratedMSBuildEditorConfig.editorconfig   | Properties |          3 |          0 |          1 |          4 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\obj\OxalateCorePlugin.csproj.nuget.dgspec.json                                        | JSON       |        245 |          0 |          0 |        245 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\obj\OxalateCorePlugin.csproj.nuget.g.props                                            | XML        |         18 |          0 |          0 |         18 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\obj\OxalateCorePlugin.csproj.nuget.g.targets                                          | XML        |          6 |          0 |          0 |          6 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\obj\Release\OxalateCorePlugin.1.0.0.nuspec                                            | XML        |         18 |          0 |          0 |         18 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\obj\Release\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs              | C#         |          3 |          1 |          1 |          5 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\obj\Release\netcoreapp3.1\OxalateCorePlugin.AssemblyInfo.cs                           | C#         |          9 |         10 |          5 |         24 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\obj\Release\netcoreapp3.1\OxalateCorePlugin.GeneratedMSBuildEditorConfig.editorconfig | Properties |          3 |          0 |          1 |          4 |
+| e:\Projects\Development\Oxalate\OxalateCorePlugin\obj\project.assets.json                                                               | JSON       |        135 |          0 |          0 |        135 |
+| e:\Projects\Development\Oxalate\OxalateServer\Command.cs                                                                                | C#         |         28 |          6 |          6 |         40 |
+| e:\Projects\Development\Oxalate\OxalateServer\IPlugin.cs                                                                                | C#         |         17 |          9 |          6 |         32 |
+| e:\Projects\Development\Oxalate\OxalateServer\OnlineUser.cs                                                                             | C#         |         91 |         11 |         11 |        113 |
+| e:\Projects\Development\Oxalate\OxalateServer\OxalateServer.csproj                                                                      | XML        |         19 |          0 |          5 |         24 |
+| e:\Projects\Development\Oxalate\OxalateServer\PluginAPI.cs                                                                              | C#         |         49 |         15 |         12 |         76 |
+| e:\Projects\Development\Oxalate\OxalateServer\PluginManager.cs                                                                          | C#         |        126 |         19 |         16 |        161 |
+| e:\Projects\Development\Oxalate\OxalateServer\Program.cs                                                                                | C#         |         36 |          0 |         10 |         46 |
+| e:\Projects\Development\Oxalate\OxalateServer\Server.Listener.cs                                                                        | C#         |        163 |          0 |          7 |        170 |
+| e:\Projects\Development\Oxalate\OxalateServer\Server.cs                                                                                 | C#         |        106 |         10 |         26 |        142 |
+| e:\Projects\Development\Oxalate\OxalateServer\Translation.cs                                                                            | C#         |         48 |         14 |          7 |         69 |
+| e:\Projects\Development\Oxalate\OxalateServer\User.cs                                                                                   | C#         |        109 |         12 |         22 |        143 |
+| e:\Projects\Development\Oxalate\OxalateServer\UserManager.cs                                                                            | C#         |        124 |         21 |         18 |        163 |
+| e:\Projects\Development\Oxalate\OxalateServer\bin\Debug\netcoreapp3.1\OxalateServer.deps.json                                           | JSON       |         50 |          0 |          0 |         50 |
+| e:\Projects\Development\Oxalate\OxalateServer\bin\Debug\netcoreapp3.1\OxalateServer.runtimeconfig.dev.json                              | JSON       |          8 |          0 |          0 |          8 |
+| e:\Projects\Development\Oxalate\OxalateServer\bin\Debug\netcoreapp3.1\OxalateServer.runtimeconfig.json                                  | JSON       |          9 |          0 |          0 |          9 |
+| e:\Projects\Development\Oxalate\OxalateServer\bin\Debug\netcoreapp3.1\config.json                                                       | JSON       |         12 |          0 |          0 |         12 |
+| e:\Projects\Development\Oxalate\OxalateServer\bin\Debug\netcoreapp3.1\zh-cn.lang.json                                                   | JSON       |         28 |          0 |          5 |         33 |
+| e:\Projects\Development\Oxalate\OxalateServer\bin\Release\netcoreapp3.1\OxalateServer.deps.json                                         | JSON       |         50 |          0 |          0 |         50 |
+| e:\Projects\Development\Oxalate\OxalateServer\bin\Release\netcoreapp3.1\OxalateServer.runtimeconfig.dev.json                            | JSON       |          8 |          0 |          0 |          8 |
+| e:\Projects\Development\Oxalate\OxalateServer\bin\Release\netcoreapp3.1\OxalateServer.runtimeconfig.json                                | JSON       |          9 |          0 |          0 |          9 |
+| e:\Projects\Development\Oxalate\OxalateServer\bin\Release\netcoreapp3.1\config.json                                                     | JSON       |         12 |          0 |          0 |         12 |
+| e:\Projects\Development\Oxalate\OxalateServer\bin\Release\netcoreapp3.1\zh-cn.lang.json                                                 | JSON       |         28 |          0 |          5 |         33 |
+| e:\Projects\Development\Oxalate\OxalateServer\config.json                                                                               | JSON       |         12 |          0 |          0 |         12 |
+| e:\Projects\Development\Oxalate\OxalateServer\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs                    | C#         |          3 |          1 |          1 |          5 |
+| e:\Projects\Development\Oxalate\OxalateServer\obj\Debug\netcoreapp3.1\OxalateServer.AssemblyInfo.cs                                     | C#         |          9 |         10 |          5 |         24 |
+| e:\Projects\Development\Oxalate\OxalateServer\obj\Debug\netcoreapp3.1\OxalateServer.GeneratedMSBuildEditorConfig.editorconfig           | Properties |          3 |          0 |          1 |          4 |
+| e:\Projects\Development\Oxalate\OxalateServer\obj\OxalateServer.csproj.nuget.dgspec.json                                                | JSON       |        181 |          0 |          0 |        181 |
+| e:\Projects\Development\Oxalate\OxalateServer\obj\OxalateServer.csproj.nuget.g.props                                                    | XML        |         18 |          0 |          0 |         18 |
+| e:\Projects\Development\Oxalate\OxalateServer\obj\OxalateServer.csproj.nuget.g.targets                                                  | XML        |          6 |          0 |          0 |          6 |
+| e:\Projects\Development\Oxalate\OxalateServer\obj\Release\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs                  | C#         |          3 |          1 |          1 |          5 |
+| e:\Projects\Development\Oxalate\OxalateServer\obj\Release\netcoreapp3.1\OxalateServer.AssemblyInfo.cs                                   | C#         |          9 |         10 |          5 |         24 |
+| e:\Projects\Development\Oxalate\OxalateServer\obj\Release\netcoreapp3.1\OxalateServer.GeneratedMSBuildEditorConfig.editorconfig         | Properties |          3 |          0 |          1 |          4 |
+| e:\Projects\Development\Oxalate\OxalateServer\obj\project.assets.json                                                                   | JSON       |        112 |          0 |          0 |        112 |
+| e:\Projects\Development\Oxalate\OxalateServer\zh-cn.lang.json                                                                           | JSON       |         28 |          0 |          5 |         33 |
+| e:\Projects\Development\Oxalate\OxalateStandard\CommandCall.cs                                                                          | C#         |         69 |         18 |         11 |         98 |
+| e:\Projects\Development\Oxalate\OxalateStandard\OxalateStandard.csproj                                                                  | XML        |          8 |          0 |          4 |         12 |
+| e:\Projects\Development\Oxalate\OxalateStandard\Packet.cs                                                                               | C#         |         51 |         16 |          8 |         75 |
+| e:\Projects\Development\Oxalate\OxalateStandard\ScreenIO.cs                                                                             | C#         |         98 |         16 |         15 |        129 |
+| e:\Projects\Development\Oxalate\OxalateStandard\StringReader.cs                                                                         | C#         |         62 |          0 |          2 |         64 |
+| e:\Projects\Development\Oxalate\OxalateStandard\User.cs                                                                                 | C#         |         81 |          9 |         17 |        107 |
+| e:\Projects\Development\Oxalate\OxalateStandard\bin\Debug\netcoreapp3.1\OxalateStandard.deps.json                                       | JSON       |         36 |          0 |          0 |         36 |
+| e:\Projects\Development\Oxalate\OxalateStandard\bin\Release\netcoreapp3.1\OxalateStandard.deps.json                                     | JSON       |         36 |          0 |          0 |         36 |
+| e:\Projects\Development\Oxalate\OxalateStandard\obj\Debug\OxalateStandard.1.0.0.nuspec                                                  | XML        |         15 |          0 |          0 |         15 |
+| e:\Projects\Development\Oxalate\OxalateStandard\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs                  | C#         |          3 |          1 |          1 |          5 |
+| e:\Projects\Development\Oxalate\OxalateStandard\obj\Debug\netcoreapp3.1\OxalateStandard.AssemblyInfo.cs                                 | C#         |          9 |         10 |          5 |         24 |
+| e:\Projects\Development\Oxalate\OxalateStandard\obj\Debug\netcoreapp3.1\OxalateStandard.GeneratedMSBuildEditorConfig.editorconfig       | Properties |          3 |          0 |          1 |          4 |
+| e:\Projects\Development\Oxalate\OxalateStandard\obj\OxalateStandard.csproj.nuget.dgspec.json                                            | JSON       |        120 |          0 |          0 |        120 |
+| e:\Projects\Development\Oxalate\OxalateStandard\obj\OxalateStandard.csproj.nuget.g.props                                                | XML        |         18 |          0 |          0 |         18 |
+| e:\Projects\Development\Oxalate\OxalateStandard\obj\OxalateStandard.csproj.nuget.g.targets                                              | XML        |          6 |          0 |          0 |          6 |
+| e:\Projects\Development\Oxalate\OxalateStandard\obj\Release\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs                | C#         |          3 |          1 |          1 |          5 |
+| e:\Projects\Development\Oxalate\OxalateStandard\obj\Release\netcoreapp3.1\OxalateStandard.AssemblyInfo.cs                               | C#         |          9 |         10 |          5 |         24 |
+| e:\Projects\Development\Oxalate\OxalateStandard\obj\Release\netcoreapp3.1\OxalateStandard.GeneratedMSBuildEditorConfig.editorconfig     | Properties |          3 |          0 |          1 |          4 |
+| e:\Projects\Development\Oxalate\OxalateStandard\obj\project.assets.json                                                                 | JSON       |         90 |          0 |          0 |         90 |
+| Total                                                                                                                                   |            |      3,866 |        265 |        307 |      4,438 |
++-----------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

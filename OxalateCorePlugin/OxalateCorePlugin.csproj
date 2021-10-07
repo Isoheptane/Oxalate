@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	<PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>false</SelfContained>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="default.lang.json" />
+    <None Remove="zh-cn.lang.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="config.json" />
+    <EmbeddedResource Include="zh-cn.lang.json" />
+    <EmbeddedResource Include="default.lang.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JsonSharp\JsonSharp.csproj" />
+    <ProjectReference Include="..\OxalateServer\OxalateServer.csproj" />
+    <ProjectReference Include="..\OxalateStandard\OxalateStandard.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy $(TargetPath) E:\Projects\Development\Oxalate\OxalateServer\bin\Debug\netcoreapp3.1\plugins\" />
+  </Target>
+
+</Project>
