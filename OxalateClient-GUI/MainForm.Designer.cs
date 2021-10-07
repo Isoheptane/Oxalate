@@ -66,6 +66,7 @@ namespace OxalateClient_GUI
             this.verLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             resources.ApplyResources(this.verLabel, "verLabel");
             this.verLabel.Name = "verLabel";
+            this.verLabel.Click += new System.EventHandler(this.ShowAboutScreen);
             // 
             // recvContainer
             // 

@@ -16,7 +16,7 @@ namespace OxalateClient_GUI
 
         ConnectDialog connectDialog;
         UserProfileDialog profileDialog;
-
+        About about;
         public MainForm(Preference preference)
         {
             InitializeComponent();
@@ -25,6 +25,8 @@ namespace OxalateClient_GUI
             client = new ClientTcp("", "");
             connectDialog = new ConnectDialog(this, preference);
             profileDialog = new UserProfileDialog(this);
+            about = new About();
+
             client.ReceivedMessage += OnMessageReceive;
             client.ErrorOccured += OnErrorOccur;
             client.ExceptionOccured += OnExceptionOccur;
@@ -155,6 +157,11 @@ namespace OxalateClient_GUI
             Disconnect();
             connectLabel.Visible = true;
             TextBoxIO.Print(receiveBox, "\\arDisconnected.\n", preference.ColorTheme);
+        }
+
+        private void ShowAboutScreen(object sender, EventArgs e)
+        {
+            about.Show();
         }
     }
 }
