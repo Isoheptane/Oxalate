@@ -7,12 +7,13 @@ using System.Text;
 using Oxalate.Standard;
 using JsonSharp;
 
-namespace OxalateCorePlugin
+namespace OxalateTcpInterface
 {
     public partial class TcpServer
     {
         bool serverOn;
-        public OxalateCore Plugin { get; }
+        TcpListener listener;
+        public TcpInterface Plugin { get; }
         public bool IsRunning
         {
             get { return serverOn; }
@@ -22,7 +23,7 @@ namespace OxalateCorePlugin
 
         Thread listenerThread;
 
-        public TcpServer(OxalateCore plugin, int port)
+        public TcpServer(TcpInterface plugin, int port)
         {
             serverOn = false;
             Plugin = plugin;
@@ -31,6 +32,11 @@ namespace OxalateCorePlugin
 
         public void StartServer()
         {
+            listener = new TcpListener(IPAddress.IPv6Any, Port);
+            listener.Server.DualMode = true;
+            listener.Start();
+            ScreenIO.Info(Plugin.Translation["listener.start"].Replace("$PORT", Port.ToString()));
+
             listenerThread = new Thread(StartListener);
             listenerThread.Start();
             serverOn = true;
@@ -38,15 +44,15 @@ namespace OxalateCorePlugin
 
         public void StopServer()
         {
+            if (listener != null)
+            {
+                listener.Stop();
+            }
             serverOn = false;
         }
 
         void StartListener()
         {
-            TcpListener listener = new TcpListener(IPAddress.IPv6Any, Port);
-            listener.Server.DualMode = true;
-            listener.Start();
-            ScreenIO.Info(Plugin.Translation["listener.start"].Replace("$PORT", Port.ToString()));
             while (IsRunning)
             {
                 try
@@ -67,6 +73,7 @@ namespace OxalateCorePlugin
                     );
                 }
             }
+            listener.Stop();
             ScreenIO.Info(Plugin.Translation["listener.stop"]);
         }
 

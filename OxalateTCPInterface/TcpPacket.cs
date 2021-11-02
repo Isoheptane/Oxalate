@@ -6,7 +6,7 @@ using System.Text;
 using JsonSharp;
 using Oxalate.Standard;
 
-namespace OxalateCorePlugin
+namespace OxalateTcpInterface
 {
     public static class TcpPacket
     {

@@ -1,0 +1,7 @@
+﻿{
+  "display.chat": "<$NICK>\\rr $MESSAGE",
+  "display.whisper": "\\7r$SENDER.NICK\\7r -> $RECEIVER.NICK\\7r : $MESSAGE",
+  "display.action": "* $NICK\\rr $MESSAGE",
+
+  "whisper.userNotOnline": "\\crTell: 用户 $USER 不在线。"
+}

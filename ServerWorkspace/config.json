@@ -1,0 +1,12 @@
+﻿{
+  "name": "\\crOxalate \\fr服务端",
+  "description": [
+    "This is the template server configure file.",
+    "这是服务端的模板配置文件。"
+  ],
+  "maxOnline": 20,
+  "language": "zh-cn",
+  "allowRegister": true,
+  "defaultPermissionLevel": 0,
+  "timeout": 5000
+}

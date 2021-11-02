@@ -1,0 +1,26 @@
+﻿{
+  "listener.start": "[TCP Server] 已启动 TCP 服务端，正在监听 $PORT 端口。",
+  "listener.failStart": "[TCP Server] 服务端启动失败：$MESSAGE",
+  "listener.stop": "[TCP Server] 服务端已停止监听。",
+  "listener.error": "[TCP Server] 服务端监听线程中出现异常：$MESSAGE",
+
+  "listener.registered": "[TCP Server] 用户 $USER ($ADDR) 已注册。",
+  "listener.connected": "[TCP Server] 用户 $USER ($ADDR) 已连接。",
+  "listener.disconnected": "[TCP Server] 用户 $USER ($ADDR) 已断开连接。",
+  "listener.failConnect": "[TCP Server] 来自 $ADDR 的用户 $USER 连接失败：$MESSAGE",
+  "listener.daemonError": "[TCP Server] 在用户 $USER 的监听线程中出现异常：$MESSAGE",
+  "listener.keepalive": "[TCP Server] 用户 $USER 因无响应而被踢出服务器。",
+
+  "auth.userNotExist": "用户不存在。",
+  "auth.passwordIncorrect": "密码错误。",
+  "auth.banned": "用户已被服务器封禁到 $TIME。",
+  "auth.alreadyLogin": "用户已在服务器中。",
+  "auth.serverFull": "服务器已满。",
+
+  "auth.registerForbidden": "服务器不允许注册。",
+  "auth.userAlreadyExist": "用户已存在。",
+  "auth.invalidUsername": "用户名不合法。",
+
+  "auth.newWelcome": "欢迎新用户注册~",
+  "auth.welcome": "欢迎回来~"
+}

@@ -5,7 +5,7 @@ using Oxalate.Server;
 using Oxalate.Standard;
 using JsonSharp;
 
-namespace OxalateCorePlugin
+namespace OxalateTcpInterface
 {
     public class TcpOnlineUser : OnlineUser
     {

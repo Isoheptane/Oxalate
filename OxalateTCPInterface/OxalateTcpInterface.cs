@@ -5,29 +5,29 @@ using JsonSharp;
 using Oxalate.Server;
 using Oxalate.Standard;
 
-namespace OxalateCorePlugin
+namespace OxalateTcpInterface
 {
-    public class OxalateCore : IPlugin
+    public class TcpInterface : IPlugin
     {
         public string PluginName
         {
-            get { return "oxalateCore"; }
+            get { return "OxalateTCPInterface"; }
         }
 
         public string PluginFullname
         {
-            get { return "Oxalate Core Function Collection"; }
+            get { return "Oxalate TCP Server Interface"; }
         }
 
         public string PluginVersion
         {
-            get { return "b0.0.1"; }
+            get { return "1.0"; }
         }
 
         public string PluginDescription
         {
             get {
-                return "A plugin that provides the basic functions.";
+                return "Provides TCP server support.";
             }
         }
 
@@ -56,15 +56,18 @@ namespace OxalateCorePlugin
             LoadLanguageFile(API.ServerLanguage);
             Config = API.LoadConfigFile("config.json");
 
-            API.RegisterCommand(new SayCommand(this, "say", Config["commands"]["say"]["usage"], Config["commands"]["say"]));
-            API.RegisterCommand(new TellCommand(this, "tell", Config["commands"]["tell"]["usage"], Config["commands"]["tell"]));
-            API.RegisterCommand(new ActionCommand(this, "action", Config["commands"]["action"]["usage"], Config["commands"]["action"]));
-
             if (Config["tcpServer"]["enabled"])
             {
-                server = new TcpServer(this, Config["tcpServer"]["port"]);
-                server.AllowRegister = Config["tcpServer"]["allowRegister"];
-                server.StartServer();
+                try
+                {
+                    server = new TcpServer(this, Config["tcpServer"]["port"]);
+                    server.AllowRegister = Config["tcpServer"]["allowRegister"];
+                    server.StartServer();
+                }
+                catch (Exception ex)
+                {
+                    ScreenIO.Error(ScreenIO.Escape(Translation["listener.failStart"].Replace("$MESSAGE", ex.ToString())));
+                } 
             }
         }
 

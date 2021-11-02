@@ -64,12 +64,10 @@ namespace OxalateClient_GUI
         public void ClientLoadUserProfile()
         {
             client.Username = preference.Username;
-            var sha256 = System.Security.Cryptography.SHA256.Create();
-
+            
             byte[] hash = Encoding.UTF8.GetBytes(preference.Password);
             for (int cycles = 0; cycles < 7; cycles++)
-                hash = sha256.ComputeHash(hash);
-            sha256.Dispose();
+                hash = System.Security.Cryptography.SHA256.HashData(hash);
 
             client.Password = Convert.ToBase64String(hash);
         }

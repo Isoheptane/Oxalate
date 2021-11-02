@@ -5,11 +5,11 @@ using Oxalate.Server;
 using Oxalate.Standard;
 using JsonSharp;
 
-namespace OxalateCorePlugin
+namespace OxalateCore
 {
     class SayCommand : Command
     {
-        public SayCommand(OxalateCore plugin, string name, string usage, JsonObject config) : base(plugin, name, usage, config) {}
+        public SayCommand(IPlugin plugin, string name, string usage, JsonObject config) : base(plugin, name, usage, config) {}
 
         public override CommandExecuteResult Execute(OnlineUser sender, CommandCall call)
         {
@@ -38,7 +38,7 @@ namespace OxalateCorePlugin
 
     public class TellCommand : Command
     {
-        public TellCommand(OxalateCore plugin, string name, string usage, JsonObject config) : base(plugin, name, usage, config) { }
+        public TellCommand(IPlugin plugin, string name, string usage, JsonObject config) : base(plugin, name, usage, config) { }
 
         public override CommandExecuteResult Execute(OnlineUser sender, CommandCall call)
         {
@@ -83,7 +83,7 @@ namespace OxalateCorePlugin
 
     class ActionCommand : Command
     {
-        public ActionCommand(OxalateCore plugin, string name, string usage, JsonObject config) : base(plugin, name, usage, config) { }
+        public ActionCommand(IPlugin plugin, string name, string usage, JsonObject config) : base(plugin, name, usage, config) { }
 
         public override CommandExecuteResult Execute(OnlineUser sender, CommandCall call)
         {

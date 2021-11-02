@@ -1,5 +1,0 @@
-﻿{
-  "display.chat": "<$NICK>\\rr $MESSAGE",
-  "display.whisper": "\\7r$SENDER\\7r -> $RECEIVER\\7r : $MESSAGE",
-  "display.action": "*\\rr $MESSAGE"
-}

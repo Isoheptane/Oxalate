@@ -108,13 +108,21 @@ namespace Oxalate.Server
             //  Load plugins
             registeredCommands = new ConcurrentDictionary<string, Command>();
             pluginManager = new PluginManager(this);
+            if (!Directory.Exists("plugins/"))
+            {
+                Directory.CreateDirectory("plugins/");
+            }
             string[] pluginPaths = Directory.GetFiles("plugins/");
-            foreach (string path in pluginPaths)
+            foreach (string path in pluginPaths) 
+            {
                 if (path.ToLower().EndsWith(".dll"))
                     PluginManager.LoadPlugin(path);
+            }
 
             foreach (var plugin in PluginManager.PluginList)
+            {
                 PluginManager.EnablePlugin(plugin.Key);
+            }
             
             Info(Translation["server.loadPlugins"].Replace("$COUNT", PluginManager.PluginList.Count.ToString()));
 

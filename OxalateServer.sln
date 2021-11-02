@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonSharp", "JsonSharp\JsonSharp.csproj", "{AC1F51DF-26CC-4A89-89D3-FE26D4D877AE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OxalateCorePlugin", "OxalateCorePlugin\OxalateCorePlugin.csproj", "{92CE7229-6438-454B-A316-EEE53F4C4CEE}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OxalateServer", "OxalateServer\OxalateServer.csproj", "{5BEE9AF2-813A-4E64-B32C-3BE34B7E8D20}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OxalateStandard", "OxalateStandard\OxalateStandard.csproj", "{483AB513-3A07-4845-965E-D2679DEB1512}"
@@ -14,6 +12,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OxalateClientTCP", "OxalateClient\OxalateClientTCP.csproj", "{7627A720-8582-4A62-9FA7-30368E073711}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OxalateClientTCP-GUI", "OxalateClient-GUI\OxalateClientTCP-GUI.csproj", "{85B96B58-F949-4EBA-A9B5-AF989999C7C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OxalateTcpInterface", "OxalateTCPInterface\OxalateTcpInterface.csproj", "{CF2A6A0E-408F-4A3F-B049-944C7B9CD7C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxalateCore", "OxalateCore\OxalateCore.csproj", "{14EAABB9-D007-4675-AB3C-FE47567DA12C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +27,6 @@ Global
 		{AC1F51DF-26CC-4A89-89D3-FE26D4D877AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC1F51DF-26CC-4A89-89D3-FE26D4D877AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC1F51DF-26CC-4A89-89D3-FE26D4D877AE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{92CE7229-6438-454B-A316-EEE53F4C4CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92CE7229-6438-454B-A316-EEE53F4C4CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92CE7229-6438-454B-A316-EEE53F4C4CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92CE7229-6438-454B-A316-EEE53F4C4CEE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5BEE9AF2-813A-4E64-B32C-3BE34B7E8D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5BEE9AF2-813A-4E64-B32C-3BE34B7E8D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BEE9AF2-813A-4E64-B32C-3BE34B7E8D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +43,14 @@ Global
 		{85B96B58-F949-4EBA-A9B5-AF989999C7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85B96B58-F949-4EBA-A9B5-AF989999C7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85B96B58-F949-4EBA-A9B5-AF989999C7C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF2A6A0E-408F-4A3F-B049-944C7B9CD7C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF2A6A0E-408F-4A3F-B049-944C7B9CD7C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF2A6A0E-408F-4A3F-B049-944C7B9CD7C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF2A6A0E-408F-4A3F-B049-944C7B9CD7C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14EAABB9-D007-4675-AB3C-FE47567DA12C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14EAABB9-D007-4675-AB3C-FE47567DA12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14EAABB9-D007-4675-AB3C-FE47567DA12C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14EAABB9-D007-4675-AB3C-FE47567DA12C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,7 @@
+﻿{
+  "tcpServer": {
+    "enabled": true,
+    "port": 37306,
+    "allowRegister": true
+  }
+}

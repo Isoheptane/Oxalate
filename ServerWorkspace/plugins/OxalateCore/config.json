@@ -1,0 +1,16 @@
+﻿{
+  "commands": {
+    "say": {
+      "usage": "say <message>",
+      "permissionLevel": 0
+    },
+    "tell": {
+      "usage": "tell <user> <message>",
+      "permissionLevel": 0
+    },
+    "action": {
+      "usage": "action <message>",
+      "permissionLevel": 0
+    }
+  }
+}

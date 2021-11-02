@@ -65,6 +65,10 @@ namespace Oxalate.Server
         public int LoadUsersProfile()
         {
             int count = 0;
+            if (!Directory.Exists("userdata/"))
+            {
+                Directory.CreateDirectory("userdata/");
+            }
             foreach (string path in Directory.GetFiles("userdata/"))
             {
                 try
